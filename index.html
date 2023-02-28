@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32c9cac575.js" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:200,400,700&display=swap&subset=latin-ext"
+     rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Exchange Rate App</h1>
+        <p>Sprawdź aktualne kursy walut!</p>
+
+        <div class="app-body">
+
+            <div class="section-left">
+                <input type="number" class="amount-one" value="1">
+                <select id="currency-one">
+                    <option value="PLN" selected>PLN</option>
+                    <option value="EUR">EURO</option>
+                    <option value="GBP">Funt brytyjski</option>
+                    <option value="USD">Dolar amerykański</option>
+                    <option value="CHF">Frank szwajcarski</option>
+                    <option value="AED">Dirham Zjednoczonych Emiratów Arabskich</option>
+                    <option value="CNY">Juan chiński</option>
+                    <option value="HUF">Forint węgierski</option>
+                </select>
+            </div>
+            <button class="swap">
+                <i class="fas fa-retweet"></i>
+            </button>
+            <div class="section-right">
+                <input type="number" class="amount-two" disabled>
+                <select id="currency-two">
+                    <option value="PLN">PLN</option>
+                    <option value="EUR" selected>EURO</option>
+                    <option value="GBP">Funt brytyjski</option>
+                    <option value="USD">Dolar amerykański</option>
+                    <option value="CHF">Frank szwajcarski</option>
+                    <option value="AED">Dirham Zjednoczonych Emiratów Arabskich</option>
+                    <option value="CNY">Juan chiński</option>
+                    <option value="HUF">Forint węgierski</option>
+                </select>
+            </div>
+
+        </div>
+        <p class="rate-info"></p>
+
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
